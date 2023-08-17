@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct HomeScreen: View {
-    @State var name = ""
+    @Binding var name : String
     
     var body: some View {
         NavigationStack {
@@ -45,7 +45,7 @@ struct HomeScreen: View {
                 
                 ToolbarItemGroup(placement: .status) {
                     HStack {
-                        NavigationLink(destination: journalFeauture()) {
+                        NavigationLink(destination: journalFeauture(name: $name)) {
                         Image("journal")
                             .resizable(resizingMode: .stretch)
                             .aspectRatio(contentMode: .fit)
@@ -55,7 +55,7 @@ struct HomeScreen: View {
                             
                     }
                         
-                        NavigationLink(destination: workoutFeature()) {
+                        NavigationLink(destination: workoutFeature(name: $name)) {
                             Image("workouts")
                                 .resizable(resizingMode: .stretch)
                                 .aspectRatio(contentMode: .fit)
@@ -65,7 +65,7 @@ struct HomeScreen: View {
                                 
                         }
                         
-                        NavigationLink(destination: HomeScreen()) {
+                        NavigationLink(destination: HomeScreen(name: $name)) {
                             Image("home")
                                 .resizable(resizingMode: .stretch)
                                 .aspectRatio(contentMode: .fit)
@@ -78,7 +78,7 @@ struct HomeScreen: View {
                         }
                         
                         
-                        NavigationLink(destination: resourceFeature()) {
+                        NavigationLink(destination: resourceFeature(name: $name)) {
                             Image("resource")
                                 .resizable(resizingMode: .stretch)
                                 .aspectRatio(contentMode: .fit)
@@ -88,7 +88,7 @@ struct HomeScreen: View {
                                 
                         }
                         
-                        NavigationLink(destination: settingFeature()) {
+                        NavigationLink(destination: settingFeature(name: $name)) {
                             Image("settings")
                                 .resizable(resizingMode: .stretch)
                                 .aspectRatio(contentMode: .fit)
@@ -110,7 +110,7 @@ struct HomeScreen: View {
 }
 struct HomeScreen_Previews: PreviewProvider {
     static var previews: some View {
-        HomeScreen()
+        HomeScreen(name: .constant(""))
     }
 }
 

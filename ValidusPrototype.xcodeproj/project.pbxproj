@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD0462472A8E9600009A8B6E /* NewToDoVieww.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0462462A8E9600009A8B6E /* NewToDoVieww.swift */; };
+		BD0462492A8EA1CD009A8B6E /* NotificationsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0462482A8EA1CD009A8B6E /* NotificationsPage.swift */; };
+		BD04624B2A8EA24A009A8B6E /* InfoPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD04624A2A8EA24A009A8B6E /* InfoPage.swift */; };
+		BD4BD39B2A8EAC98007A68CC /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD4BD39A2A8EAC98007A68CC /* Launch Screen.storyboard */; };
 		BD60F8362A8BD03F0051A7F1 /* ValidusPrototypeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD60F8352A8BD03F0051A7F1 /* ValidusPrototypeApp.swift */; };
 		BD60F8382A8BD03F0051A7F1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD60F8372A8BD03F0051A7F1 /* ContentView.swift */; };
 		BD60F83A2A8BD0410051A7F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD60F8392A8BD0410051A7F1 /* Assets.xcassets */; };
@@ -15,6 +19,8 @@
 		BD60F8512A8BD0420051A7F1 /* ValidusPrototypeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD60F8502A8BD0420051A7F1 /* ValidusPrototypeUITests.swift */; };
 		BD60F8532A8BD0420051A7F1 /* ValidusPrototypeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD60F8522A8BD0420051A7F1 /* ValidusPrototypeUITestsLaunchTests.swift */; };
 		BD7BC4A22A8E7A94006AB55B /* AboutPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7BC4A12A8E7A94006AB55B /* AboutPage.swift */; };
+		BD7BC4A42A8E89D6006AB55B /* NewToDoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7BC4A32A8E89D6006AB55B /* NewToDoView.swift */; };
+		BD7BC4A62A8E8A00006AB55B /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7BC4A52A8E8A00006AB55B /* ToDoItem.swift */; };
 		BD8DCE982A8D0F5B0034C15D /* journalFeauture.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8DCE972A8D0F5B0034C15D /* journalFeauture.swift */; };
 		BD8DCE9A2A8D152E0034C15D /* workoutFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8DCE992A8D152E0034C15D /* workoutFeature.swift */; };
 		BD8DCE9C2A8D15480034C15D /* resourceFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8DCE9B2A8D15480034C15D /* resourceFeature.swift */; };
@@ -40,6 +46,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BD0462462A8E9600009A8B6E /* NewToDoVieww.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewToDoVieww.swift; sourceTree = "<group>"; };
+		BD0462482A8EA1CD009A8B6E /* NotificationsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsPage.swift; sourceTree = "<group>"; };
+		BD04624A2A8EA24A009A8B6E /* InfoPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPage.swift; sourceTree = "<group>"; };
+		BD4BD39A2A8EAC98007A68CC /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		BD60F8322A8BD03F0051A7F1 /* ValidusPrototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ValidusPrototype.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD60F8352A8BD03F0051A7F1 /* ValidusPrototypeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidusPrototypeApp.swift; sourceTree = "<group>"; };
 		BD60F8372A8BD03F0051A7F1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,6 +61,8 @@
 		BD60F8502A8BD0420051A7F1 /* ValidusPrototypeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidusPrototypeUITests.swift; sourceTree = "<group>"; };
 		BD60F8522A8BD0420051A7F1 /* ValidusPrototypeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidusPrototypeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		BD7BC4A12A8E7A94006AB55B /* AboutPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutPage.swift; sourceTree = "<group>"; };
+		BD7BC4A32A8E89D6006AB55B /* NewToDoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewToDoView.swift; sourceTree = "<group>"; };
+		BD7BC4A52A8E8A00006AB55B /* ToDoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
 		BD8DCE972A8D0F5B0034C15D /* journalFeauture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = journalFeauture.swift; sourceTree = "<group>"; };
 		BD8DCE992A8D152E0034C15D /* workoutFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = workoutFeature.swift; sourceTree = "<group>"; };
 		BD8DCE9B2A8D15480034C15D /* resourceFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = resourceFeature.swift; sourceTree = "<group>"; };
@@ -111,10 +123,16 @@
 				BDAB6F312A8BD42000AD2AFB /* HomeScreen.swift */,
 				BD8DCE972A8D0F5B0034C15D /* journalFeauture.swift */,
 				BD8DCE992A8D152E0034C15D /* workoutFeature.swift */,
+				BD0462462A8E9600009A8B6E /* NewToDoVieww.swift */,
+				BD7BC4A32A8E89D6006AB55B /* NewToDoView.swift */,
+				BD7BC4A52A8E8A00006AB55B /* ToDoItem.swift */,
 				BD8DCE9B2A8D15480034C15D /* resourceFeature.swift */,
 				BD8DCE9D2A8D155D0034C15D /* settingFeature.swift */,
+				BD04624A2A8EA24A009A8B6E /* InfoPage.swift */,
 				BD7BC4A12A8E7A94006AB55B /* AboutPage.swift */,
+				BD0462482A8EA1CD009A8B6E /* NotificationsPage.swift */,
 				BD60F8392A8BD0410051A7F1 /* Assets.xcassets */,
+				BD4BD39A2A8EAC98007A68CC /* Launch Screen.storyboard */,
 				BD60F83B2A8BD0410051A7F1 /* Preview Content */,
 			);
 			path = ValidusPrototype;
@@ -249,6 +267,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD4BD39B2A8EAC98007A68CC /* Launch Screen.storyboard in Resources */,
 				BD60F83D2A8BD0410051A7F1 /* Preview Assets.xcassets in Resources */,
 				BD60F83A2A8BD0410051A7F1 /* Assets.xcassets in Resources */,
 			);
@@ -275,12 +294,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD7BC4A42A8E89D6006AB55B /* NewToDoView.swift in Sources */,
 				BD8DCE982A8D0F5B0034C15D /* journalFeauture.swift in Sources */,
+				BD7BC4A62A8E8A00006AB55B /* ToDoItem.swift in Sources */,
 				BD8DCE9A2A8D152E0034C15D /* workoutFeature.swift in Sources */,
 				BD7BC4A22A8E7A94006AB55B /* AboutPage.swift in Sources */,
+				BD0462492A8EA1CD009A8B6E /* NotificationsPage.swift in Sources */,
 				BD60F8382A8BD03F0051A7F1 /* ContentView.swift in Sources */,
 				BD60F8362A8BD03F0051A7F1 /* ValidusPrototypeApp.swift in Sources */,
 				BD8DCE9C2A8D15480034C15D /* resourceFeature.swift in Sources */,
+				BD04624B2A8EA24A009A8B6E /* InfoPage.swift in Sources */,
+				BD0462472A8E9600009A8B6E /* NewToDoVieww.swift in Sources */,
 				BDAB6F322A8BD42000AD2AFB /* HomeScreen.swift in Sources */,
 				BD8DCE9E2A8D155D0034C15D /* settingFeature.swift in Sources */,
 			);

@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct settingFeature: View {
+    @Binding var name : String
     var body: some View {
         NavigationStack {
             ZStack{
@@ -17,16 +18,20 @@ struct settingFeature: View {
                 VStack{
                     Text("Settings")
                         .font(.largeTitle)
+                        .fontWeight(.bold)
                         .foregroundColor(Color.white)
                         .multilineTextAlignment(.leading)
                         .padding(.trailing, 190.0)
                     Spacer()
                     
-                    NavigationLink(destination: AboutPage()) {
-                        Text("About The Creators")
+                    NavigationLink(destination: AboutPage(name: $name)) {
+                        Text("Personal Info")
                             .font(.largeTitle)
                             .foregroundColor(Color.white)
                             .multilineTextAlignment(.leading)
+                            .padding(.horizontal, 48.0)
+                     
+                            
 //                           
                        
                     }
@@ -34,13 +39,30 @@ struct settingFeature: View {
                     .background(Color("Gold"))
                     .cornerRadius(20)
                     Spacer()
+                       
                     
-                    
-                    NavigationLink(destination: AboutPage()) {
+                    NavigationLink(destination: AboutPage(name: $name)) {
                         Text("About The Creators")
                             .font(.largeTitle)
                             .foregroundColor(Color.white)
                             .multilineTextAlignment(.leading)
+    //
+                       
+                    }
+                    .padding(.all, 20.0)
+                    .background(Color("Gold"))
+                    .cornerRadius(20)
+                    Spacer()
+                        
+                    
+                    
+                    NavigationLink(destination: AboutPage(name: $name)) {
+                        Text("Notifications")
+                            .font(.largeTitle)
+                            .foregroundColor(Color.white)
+                            .multilineTextAlignment(.leading)
+                            .padding(.horizontal, 50.0)
+                            
 //
                        
                     }
@@ -48,31 +70,35 @@ struct settingFeature: View {
                     .background(Color("Gold"))
                     .cornerRadius(20)
                     Spacer()
+                    
                 }
+               
+                    
+                
             }.toolbar {
                 ToolbarItemGroup(placement: .status) {
                     HStack {
-                        NavigationLink(destination: journalFeauture()) {
+                        NavigationLink(destination: journalFeauture(name: $name)) {
                             Image("journal")
                                 .resizable(resizingMode: .stretch)
                                 .aspectRatio(contentMode: .fit)
                         }
-                        NavigationLink(destination: workoutFeature()) {
+                        NavigationLink(destination: workoutFeature(name: $name)) {
                             Image("workouts")
                                 .resizable(resizingMode: .stretch)
                                 .aspectRatio(contentMode: .fit)
                         }
-                        NavigationLink(destination: HomeScreen()) {
+                        NavigationLink(destination: HomeScreen(name: $name)) {
                             Image("home")
                                 .resizable(resizingMode: .stretch)
                                 .aspectRatio(contentMode: .fit)
                         }
-                        NavigationLink(destination: resourceFeature()) {
+                        NavigationLink(destination: resourceFeature(name: $name)) {
                             Image("resource")
                                 .resizable(resizingMode: .stretch)
                                 .aspectRatio(contentMode: .fit)
                         }
-                        NavigationLink(destination: settingFeature()) {
+                        NavigationLink(destination: settingFeature(name: $name)) {
                             Image("settings")
                                 .resizable(resizingMode: .stretch)
                                 .aspectRatio(contentMode: .fit)
@@ -94,6 +120,6 @@ struct settingFeature: View {
 
             struct settingFeature_Previews: PreviewProvider {
                 static var previews: some View {
-                    settingFeature()
+                    settingFeature(name: .constant(""))
                 }
             }

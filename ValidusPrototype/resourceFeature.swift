@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct resourceFeature: View {
+    @Binding var name : String
     var body: some View {
         NavigationStack {
             ZStack{
@@ -17,6 +18,7 @@ struct resourceFeature: View {
                 VStack {
                     Text("Resources")
                         .font(.largeTitle)
+                        .fontWeight(.bold)
                         .foregroundColor(Color.white)
                         .multilineTextAlignment(.leading)
                         .padding(.trailing, 190.0)
@@ -80,27 +82,27 @@ struct resourceFeature: View {
                 }.toolbar {
                     ToolbarItemGroup(placement: .status) {
                         HStack {
-                            NavigationLink(destination: journalFeauture()) {
+                            NavigationLink(destination: journalFeauture(name: $name)) {
                                 Image("journal")
                                     .resizable(resizingMode: .stretch)
                                     .aspectRatio(contentMode: .fit)
                             }
-                            NavigationLink(destination: workoutFeature()) {
+                            NavigationLink(destination: workoutFeature(name: $name)) {
                                 Image("workouts")
                                     .resizable(resizingMode: .stretch)
                                     .aspectRatio(contentMode: .fit)
                             }
-                            NavigationLink(destination: HomeScreen()) {
+                            NavigationLink(destination: HomeScreen(name: $name)) {
                                 Image("home")
                                     .resizable(resizingMode: .stretch)
                                     .aspectRatio(contentMode: .fit)
                             }
-                            NavigationLink(destination: resourceFeature()) {
+                            NavigationLink(destination: resourceFeature(name: $name)) {
                                 Image("resource")
                                     .resizable(resizingMode: .stretch)
                                     .aspectRatio(contentMode: .fit)
                             }
-                            NavigationLink(destination: settingFeature()) {
+                            NavigationLink(destination: settingFeature(name: $name)) {
                                 Image("settings")
                                     .resizable(resizingMode: .stretch)
                                     .aspectRatio(contentMode: .fit)
@@ -119,7 +121,7 @@ struct resourceFeature: View {
 }
             struct resourceFeature_Previews: PreviewProvider {
                 static var previews: some View {
-                    resourceFeature()
+                    resourceFeature(name: .constant(""))
                 }
             }
             

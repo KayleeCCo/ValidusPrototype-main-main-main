@@ -32,7 +32,7 @@ struct ContentView: View {
                         .cornerRadius(30)
                         .padding()
                     
-                        NavigationLink(destination: HomeScreen(name: name)) {
+                        NavigationLink(destination: HomeScreen(name: $name)) {
                             Text("Next")
                                 .fontWeight(.semibold)
                                 .foregroundColor(Color.white)
